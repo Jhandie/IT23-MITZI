@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://i.pinimg.com/564x/cd/f6/8e/cdf68ea7e4c3de2d2983f302cc457a69.jpg"); 
+    background-image: url("photos/home.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Makes the background fixed when scrolling */
@@ -7,14 +7,14 @@ body {
 }
 
 h1 {
-    color: rgb(15, 28, 21); /* Removed 'blue' to avoid invalid syntax */
+    color: rgb(0, 0, 0); /* Removed 'blue' to avoid invalid syntax */
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 100px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
 }
 h2 {
-    color: rgb(240, 245, 242); /* Removed 'blue' to avoid invalid syntax */
+    color: rgb(0, 0, 0); /* Removed 'blue' to avoid invalid syntax */
     text-align: justify;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
