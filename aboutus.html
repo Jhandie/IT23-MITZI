@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="photos/home.jpg" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Jhandie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0px 0px;
+            background-image: url(photos/abb.jpg);
+            background-size: cover;
+            color: #010101; /* White text for contrast */
+           
+        }
+
+
+        .header {
+    overflow: hidden;
+    background-color: rgba(117, 18, 145, 0.8); /* Slight transparency for a softer look */
+}
+
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: rgb(88, 3, 3);
+    color: rgb(96, 34, 138);
+}
+
+.header a.active {
+    background-color: rgb(54, 54, 1);
+    color: white;
+}
+
+.header-Right {
+    float: right;
+}
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1e1e1e; /* Dark footer background */
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333; /* Dark color for main heading */
+        }
+
+        h2, h4, h5, h6, hgroup {
+            margin: 10px 0;
+            color: #333; /* Dark color for subheadings */
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin: 10px 0;
+            color: #333; /* Dark color for subheadings */
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-Left">
+                <a href="home.html" class="logo">
+                    <img src="photos/logo.svg" alt="Logo" class="logo-img" style="height: 40px; vertical-align: middle;">
+                    TaraTea
+                </a>
+            </div>
+            <div class="header-Right">
+                <a href="home.html">Home</a>
+                <a class="active" href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="samplepicture.html">Products</a>
+                <a href="#" id="logout" onclick="logout()">Logout</a> <!-- Logout link -->
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <h1>ABOUT US</h1>
+        <img src="photos/self - Copy.jpg" 
+        alt="A beautiful moment captured" style="max-width: 20%; height: auto; margin-top: 20px;">
+        <h3>Webmaster: Jhandie A. Sumihay </h3>
+        <h2>Welcome to Tara Tea!, I’m Jhandie A. Sumihay, a 20-year-old from Barangay Lindaban, and I’m excited to share my passion for tea and community with you. Tara Tea is more than just a website; it's a celebration of the soothing moments and rich traditions that tea brings into our lives.</h2>
+        <h2>Here, you’ll find everything from tea reviews and brewing tips to stories that connect us to our roots. My goal is to create a warm and inviting space where tea lovers can come together, learn, and share their experiences.</h2>
+        <h2>Join me on this flavorful journey as we explore the world of tea, one cup at a time. Thank you for being a part of Tara Tea.</h2>
+        <h2>"let’s brew some wonderful memories together!"</h2>
+       
+    </section>
+    
+
+    <footer>
+        <div class="footer">
+            © Copyright <strong><span>TaraTea</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        function logout() {
+            alert("You have been logged out!");
+            window.location.href = "login.html"; // Adjust as needed
+        }
+    </script>
+</body>
+</html>
