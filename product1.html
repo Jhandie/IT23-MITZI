@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0px 0px;
+            background-image: url(photos/abb.jpg);
+            background-size: cover;
+            color: #010101; /* White text for contrast */
+           
+        }
+
+
+        .header {
+    overflow: hidden;
+    background-color: rgba(117, 18, 145, 0.8); /* Slight transparency for a softer look */
+}
+
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: rgb(88, 3, 3);
+    color: rgb(96, 34, 138);
+}
+
+.header a.active {
+    background-color: rgb(54, 54, 1);
+    color: white;
+}
+
+.header-Right {
+    float: right;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .product-detail {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 2;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+
+        .product-info h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .product-info p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF5733;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            background-color: #FF5733;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buy-button:hover {
+            background-color: #e14e2d;
+        }
+
+        .additional-images {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            width: 80%; /* Make each image container a bit smaller */
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 20%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .image-item .image-info {
+            padding: 15px;
+        }
+
+        .image-item .image-info h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .image-item .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FF5733;
+            margin-bottom: 10px;
+        }
+
+        .image-item .buy-now-section {
+            margin-top: 10px;
+        }
+
+        .image-item .buy-now-section p {
+            font-size: 14px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-Left">
+                <a href="home.html" class="logo">
+                    <img src="photos/logo.svg" alt="Logo" class="logo-img" style="height: 40px; vertical-align: middle;">
+                    TaraTea
+                </a>
+            </div>
+            <div class="header-Right">
+                <a href="home.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a class="active" href="product1.html">Products</a>
+                <a href="#" id="logout" onclick="logout()">Logout</a> <!-- Logout link -->
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Main Product Section -->
+    <div class="product-detail">
+        <!-- Main Product Image -->
+        <div class="product-image">
+            <img src="https://i.pinimg.com/564x/91/30/e6/9130e699d2cedf764bbcc8d1c6c556db.jpg" alt="Blue Shades">
+        </div>
+        
+        <!-- Product Info -->
+        <div class="product-info">
+            <h2>Blue Shades</h2>
+            <p>Experience the vibrant and calming blue shades perfect for sunny days. Whether you're lounging by the beach or simply enjoying the outdoors, these shades offer both style and comfort.</p>
+            <div class="price">₱59</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Additional Images Section (3 images only) -->
+    <div class="additional-images">
+        <!-- Image 1 -->
+        <div class="image-item">
+            <img src="https://i.pinimg.com/564x/17/ae/1e/17ae1e397e793e8e376eb9f2fa0f5bd5.jpg" alt="Blue Shades Close-up">
+            <div class="image-info">
+                <h3>Blue Shades Close-up</h3>
+                <div class="price">₱59</div>
+                <button class="buy-button">Buy Now</button>
+                <p>Check out the details of the Blue Shades up close! Perfect for those who want to see the quality.</p>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="image-item">
+            <img src="https://i.pinimg.com/564x/55/5b/58/555b5861595ab240bd13c28d1e62c9f0.jpg" alt="Blue Shades Side View">
+            <div class="image-info">
+                <h3>Blue Shades Side View</h3>
+                <div class="price">₱59</div>
+                <button class="buy-button">Buy Now</button>
+                <p>From the side, these shades still look amazing. See how they sit perfectly on your face.</p>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="image-item">
+            <img src="https://i.pinimg.com/564x/91/30/e6/9130e699d2cedf764bbcc8d1c6c556db.jpg" alt="Blue Shades Back">
+            <div class="image-info">
+                <h3>Blue Shades Back</h3>
+                <div class="price">₱59</div>
+                <button class="buy-button">Buy Now</button>
+                <p>Take a look at the back of the shades, designed with comfort and durability in mind.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
