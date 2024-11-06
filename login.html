@@ -13,12 +13,12 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #1e1e1e; /* Dark background */
-            color: #ffffff; /* Light text color */
+            background-color: #644d23ef;
+            color: #ffffff; 
         }
 
         .login-container {
-            background: #694306c8; /* Slightly lighter background */
+            background: #946c2cc8;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -28,43 +28,51 @@
 
         h2 {
             margin-bottom: 20px;
-            color: #00ff00; /* Neon green for title */
+            color: #000000;
+            font-size: 50px;
+            margin-top: -10px;
         }
 
         label {
             display: block;
             margin-bottom: 5px;
-            color: #bbb; /* Light gray for labels */
+            color: #050505;
+            text-align: left;
+            font-weight: bold;
         }
 
         input {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #444; /* Dark border */
+            border: 1px solid #855127; 
             border-radius: 5px;
-            background: #3c3c3c; /* Dark input background */
-            color: #ffffff; /* White text in inputs */
+            background: #3c3c3c;
+            color: #ffffff; 
         }
 
         input:focus {
-            border-color: #a48b0d; /* Neon green focus */
+            border-color: #e6d397; 
             outline: none;
-            background: #444; /* Slightly lighter on focus */
+            background: #e0c78f; 
         }
 
         button {
             padding: 10px;
-            background-color: #00ff00; /* Neon green */
-            color: black;
-            border: none;
-            border-radius: 5px;
+            background-color: #ffffff00;
+            border-color: #e0c78f;
+            color: rgb(2, 1, 1);
+            font-size: 15px;
+            font-weight: bold;
+            border: solid;
+            background-color: #493813c7;
+            border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
 
         button:hover {
-            background-color: #00cc00; /* Darker green on hover */
+            background-color: #ffffff;
         }
 
         .error {
@@ -73,13 +81,13 @@
         }
 
         .logo {
-            width: 200px; /* Adjust size as needed */
+            width: 300px; 
             margin-bottom: 20px;
         }
 
-        /* Additional styling for a digital feel */
+    
         ::placeholder {
-            color: #aaa; /* Placeholder color */
+            color: #aaa; 
         }
     </style>
 </head>
@@ -101,15 +109,15 @@
  
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
+            event.preventDefault(); 
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            // Simple authentication check (for demo purposes)
-            if (username === 'Maam mitzi' && password === '12345') {
+     
+            if (username === 'prettymitzi' && password === '12345') {
                 alert('Login successful!');
-                // Redirect to home page
-                window.location.href = 'home.html'; // Updated to new CV page
+      
+                window.location.href = 'home.html';
             } else {
                 document.getElementById('error-message.').textContent = 'Invalid username or password.';
             }

@@ -6,28 +6,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>TaraTea</title>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0px 0px;
-            background-image: url(photos/images.jfif);
-            background-color: #121212; /* Dark background */
-            color: #ffffff; /* Light text color */
+            background-image: url(photos/puli.jfif);
+            background-color: #000000; 
+            color: #fcfbfb; 
         }
 
         body {
-    background-image: url("photos/images.jfif"); 
+    background-image: url("photos/puli.jfif"); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; /* Makes the background fixed when scrolling */
-    filter: brightness(0.9); /* Slightly dim the background for better text visibility */
+    background-attachment: fixed; 
+    filter: brightness(0.9); 
 }
 
         .header {
     overflow: hidden;
-    background-color: rgba(117, 18, 145, 0.8); /* Slight transparency for a softer look */
+    background-color: rgba(170, 147, 85, 0.918); 
+    margin-top: -18px;
 }
 
 .header a {
@@ -49,13 +50,14 @@
 }
 
 .header a:hover {
-    background-color: rgb(88, 3, 3);
-    color: rgb(96, 34, 138);
+    background-color: rgba(90, 82, 11, 0.795);
+    color: rgb(255, 255, 255);
 }
 
 .header a.active {
-    background-color: rgb(54, 54, 1);
+    background-color: rgba(90, 82, 11, 0.795);
     color: white;
+
 }
 
 .header-Right {
@@ -69,7 +71,7 @@
 
         footer {
             text-align: center;
-            background-color: #1e1e1e; /* Dark footer background */
+            background-color: rgba(128, 112, 68, 0.918);
             padding: 10px;
             position: relative;
             bottom: 0;
@@ -77,13 +79,13 @@
         }
 
         h1 {
-            font-size: 48px; /* Adjusted heading size */
-            color: #000000; /* Light color for the heading */
+            font-size: 48px; 
+            color: #000000;
         }
 
         h2 {
-            font-size: 25px; /* Adjusted heading size */
-            color: #000000; /* Light color for the heading */
+            font-size: 25px; 
+            color: #000000; 
         }
     </style>
 </head>
@@ -100,25 +102,26 @@
                 <a class="active" href="home.html">Home</a>
                 <a href="aboutus.html">About Us</a>
                 <a href="contactus.html">Contact Us</a>
-                <a href="aboutus.html">Products</a>
-                <a href="#" id="logout" onclick="logout()">Logout</a> <!-- Logout link -->
+                <a href="product1.html">Products</a>
+                <a href="#" id="logout" onclick="logout()">Logout</a> 
             </div>
         </div>
     </header>
     
     <body>
         <header>
-            <!-- Header Content -->
+         
         </header>
         
         <div class="main-content">
             <section>
                 <h1>TARA TEA!!</h1>
-<img src="photos/coffee.jfif"  alt="A beautiful moment captured" style="max-width: 50%; height: auto; margin-top: 0px;">
+<img src="photos/coftea.jpeg"  alt="A beautiful moment captured" style="max-width: 50%; height: auto; margin-top: 0px;">
 
-                <h2>Welcome to Tara Tea! Were excited to share our passion for premium teas with you. At Tara Tea, we curate a selection of the finest blends from around the world, focusing on quality, sustainability, and flavor. Whether youre a seasoned tea connoisseur or just beginning your journey, we have something special for everyone.
+                <h2>Welcome to Tara Tea! Were excited to share our passion for premium teas with you. </h2>
+                    <h2>At Tara Tea, we curate a selection of the finest blends from around the world, focusing on quality, sustainability, and flavor. Whether youre a seasoned tea connoisseur or just beginning your journey, we have something special for everyone.</h2>
 
-                    Explore our diverse range of teas, from soothing herbal infusions to robust black and green teas. Each blend is crafted to provide a unique experience, promoting relaxation, wellness, and enjoyment. Join our community of tea lovers, discover brewing tips, and find the perfect tea for any occasion.
+                    <h2>Explore our diverse range of teas, from soothing herbal infusions to robust black and green teas. Each blend is crafted to provide a unique experience, promoting relaxation, wellness, and enjoyment. Join our community of tea lovers, discover brewing tips, and find the perfect tea for any occasion.
                     
                     Sip, savor, and share the joy of tea with Tara Tea!</h2>
             </section>
@@ -131,7 +134,7 @@
         <script>
             function logout() {
                 alert("You have been logged out!");
-                window.location.href = "login.html"; // Adjust as needed
+                window.location.href = "login.html"; 
             }
         </script>
     </body>

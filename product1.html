@@ -9,16 +9,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0px 0px;
-            background-image: url(photos/abb.jpg);
+            background-image: url(photos/kape.webp);
             background-size: cover;
-            color: #010101; /* White text for contrast */
+            background-color: #333;
+            color: #fafafa; 
            
         }
+        
 
 
         .header {
     overflow: hidden;
-    background-color: rgba(117, 18, 145, 0.8); /* Slight transparency for a softer look */
+    background-color: rgba(170, 147, 85, 0.918); 
 }
 
 .header a {
@@ -40,12 +42,12 @@
 }
 
 .header a:hover {
-    background-color: rgb(88, 3, 3);
-    color: rgb(96, 34, 138);
+    background-color: rgba(90, 82, 11, 0.795);
+    color: rgb(255, 255, 255);
 }
 
 .header a.active {
-    background-color: rgb(54, 54, 1);
+    background-color: rgba(90, 82, 11, 0.795);
     color: white;
 }
 
@@ -133,7 +135,7 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin-bottom: 30px;
-            width: 80%; /* Make each image container a bit smaller */
+            width: 80%;
             text-align: center;
         }
 
@@ -169,6 +171,17 @@
             color: #555;
         }
 
+        footer {
+            text-align: center;
+            background-color: rgba(128, 112, 68, 0.918);
+            color: #f9f9f9;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        
+        }
+
     </style>
 </head>
 <body>
@@ -185,63 +198,95 @@
                 <a href="aboutus.html">About Us</a>
                 <a href="contactus.html">Contact Us</a>
                 <a class="active" href="product1.html">Products</a>
-                <a href="#" id="logout" onclick="logout()">Logout</a> <!-- Logout link -->
+                <a href="#" id="logout" onclick="logout()">Logout</a>
             </div>
         </div>
     </header>
     
 
-    <!-- Main Product Section -->
+
     <div class="product-detail">
-        <!-- Main Product Image -->
+
         <div class="product-image">
-            <img src="https://i.pinimg.com/564x/91/30/e6/9130e699d2cedf764bbcc8d1c6c556db.jpg" alt="Blue Shades">
+            <img src="photos/vanilla coffee.jfif" alt="Vanilla Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
         </div>
-        
-        <!-- Product Info -->
+
         <div class="product-info">
-            <h2>Blue Shades</h2>
-            <p>Experience the vibrant and calming blue shades perfect for sunny days. Whether you're lounging by the beach or simply enjoying the outdoors, these shades offer both style and comfort.</p>
-            <div class="price">₱59</div>
+            <h2>Vanilla Coffee</h2>
+            <p>"Vanilla coffee is like the quiet love that grows slowly but deeply — subtle, soothing, and comforting in all the right ways. It doesn’t scream for attention, but with every sip, you realize it’s exactly what you needed. Sometimes, the simplest things are the ones that make you feel at home. ☕🌿💛"</p>
+            <div class="price">₱125</div>
             <button class="buy-button">Buy Now</button>
         </div>
     </div>
 
-    <!-- Additional Images Section (3 images only) -->
-    <div class="additional-images">
-        <!-- Image 1 -->
-        <div class="image-item">
-            <img src="https://i.pinimg.com/564x/17/ae/1e/17ae1e397e793e8e376eb9f2fa0f5bd5.jpg" alt="Blue Shades Close-up">
-            <div class="image-info">
-                <h3>Blue Shades Close-up</h3>
-                <div class="price">₱59</div>
-                <button class="buy-button">Buy Now</button>
-                <p>Check out the details of the Blue Shades up close! Perfect for those who want to see the quality.</p>
-            </div>
+
+    <div class="product-detail">
+
+        <div class="product-image">
+            <img src="photos/chocolate coffee.jfif" alt="Chocolate Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
         </div>
 
-        <!-- Image 2 -->
-        <div class="image-item">
-            <img src="https://i.pinimg.com/564x/55/5b/58/555b5861595ab240bd13c28d1e62c9f0.jpg" alt="Blue Shades Side View">
-            <div class="image-info">
-                <h3>Blue Shades Side View</h3>
-                <div class="price">₱59</div>
-                <button class="buy-button">Buy Now</button>
-                <p>From the side, these shades still look amazing. See how they sit perfectly on your face.</p>
-            </div>
-        </div>
-
-        <!-- Image 3 -->
-        <div class="image-item">
-            <img src="https://i.pinimg.com/564x/91/30/e6/9130e699d2cedf764bbcc8d1c6c556db.jpg" alt="Blue Shades Back">
-            <div class="image-info">
-                <h3>Blue Shades Back</h3>
-                <div class="price">₱59</div>
-                <button class="buy-button">Buy Now</button>
-                <p>Take a look at the back of the shades, designed with comfort and durability in mind.</p>
-            </div>
+        <div class="product-info">
+            <h2>Chocolate Coffee</h2>
+            <p>"Chocolate coffee is like that person who’s always there to comfort you — bittersweet at first, but once you let it in, it melts all the stress away, leaving you with a warmth you didn’t know you needed. It’s a reminder that sometimes, the best things come when you least expect it. ☕🍫💔"</p>
+            <div class="price">₱150</div>
+            <button class="buy-button">Buy Now</button>
         </div>
     </div>
 
+
+        <div class="product-detail">
+
+        <div class="product-image">
+            <img src="photos/caramel coffee.jpg" alt="Caramel Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
+        </div>
+
+        <div class="product-info">
+            <h2>Caramel Coffee</h2>
+            <p>Caramel coffee is like that feeling when you’re wrapped in warmth after a long day — sweet, smooth, and just a little bit indulgent. It’s the reminder that even the simplest moments can be filled with sweetness. A little bit of caramel can turn any bitter day into something worth savoring. ☕🍮"</p>
+            <div class="price">₱150</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+
+      <div class="product-detail">
+
+        <div class="product-image">
+            <img src="photos/expresso coffee.webp" alt="Expresso Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
+        </div>
+
+        <div class="product-info">
+            <h2>Expresso Coffee</h2>
+            <p>"Espresso is like a love that hits you all at once — intense, bold, and unapologetically strong. No sugar-coating, just pure energy and raw connection. It's the kind of kick you need when you're feeling lost, and the spark that reminds you to keep going. ☕🔥"</p>
+            <div class="price">₱99</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-detail">
+
+        <div class="product-image">
+            <img src="photos/mocha coffee.jfif" alt="Mocha Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
+        </div>
+
+        <div class="product-info">
+            <h2>Mocha Coffee</h2>
+            <p>"Mocha is like the relationship you crave — a perfect blend of sweetness and strength. It's the balance of passion and comfort, where the rich espresso meets the smooth chocolate, reminding you that life can be both intense and sweet. Sometimes, all you need is a little mocha to make everything feel right. ☕🍫💖"</p>
+            <div class="price">₱125</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        © Copyright <strong><span>TaraTea</span></strong>. All Rights Reserved
+    </footer>
+
+    <script>
+        function logout() {
+            alert("You have been logged out!");
+            window.location.href = "login.html"; 
+        }
+    </script>
 </body>
 </html>
