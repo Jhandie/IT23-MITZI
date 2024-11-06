@@ -10,16 +10,16 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0px 0px;
-            background-image: url(photos/abb.jpg);
+            background-image: url(photos/usab.webp);
             background-size: cover;
-            color: #010101; /* White text for contrast */
+            color: #ffffff;
            
         }
 
 
         .header {
     overflow: hidden;
-    background-color: rgba(117, 18, 145, 0.8); /* Slight transparency for a softer look */
+    background-color: rgba(170, 147, 85, 0.918);
 }
 
 .header a {
@@ -41,12 +41,12 @@
 }
 
 .header a:hover {
-    background-color: rgb(88, 3, 3);
-    color: rgb(96, 34, 138);
+    background-color: rgba(90, 82, 11, 0.795);
+    color: rgb(255, 255, 255);
 }
 
 .header a.active {
-    background-color: rgb(54, 54, 1);
+    background-color: rgba(90, 82, 11, 0.795);
     color: white;
 }
 
@@ -60,28 +60,29 @@
 
         footer {
             text-align: center;
-            background-color: #1e1e1e; /* Dark footer background */
+            background-color: rgba(128, 112, 68, 0.918); 
             padding: 10px;
             position: relative;
             bottom: 0;
             width: 100%;
         }
 
+
         h1 {
             font-size: 48px;
-            color: #333; /* Dark color for main heading */
+            color: #141313;
         }
 
         h2, h4, h5, h6, hgroup {
             margin: 10px 0;
-            color: #333; /* Dark color for subheadings */
+            color: #333; 
             text-align: center;
         }
 
         h3 {
             font-size: 25px;
             margin: 10px 0;
-            color: #333; /* Dark color for subheadings */
+            color: #333; 
             text-align: center;
         }
 
@@ -100,8 +101,8 @@
                 <a href="home.html">Home</a>
                 <a class="active" href="aboutus.html">About Us</a>
                 <a href="contactus.html">Contact Us</a>
-                <a href="samplepicture.html">Products</a>
-                <a href="#" id="logout" onclick="logout()">Logout</a> <!-- Logout link -->
+                <a href="product1.html">Products</a>
+                <a href="#" id="logout" onclick="logout()">Logout</a>
             </div>
         </div>
     </header>
@@ -128,7 +129,7 @@
     <script>
         function logout() {
             alert("You have been logged out!");
-            window.location.href = "login.html"; // Adjust as needed
+            window.location.href = "login.html"; 
         }
     </script>
 </body>
