@@ -202,93 +202,85 @@
             </div>
         </div>
     </header>
-    
 
-
+    <!-- Product 1: Vanilla Coffee -->
     <div class="product-detail">
-
         <div class="product-image">
-            <img src="photos/vanilla coffee.jfif" alt="Vanilla Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
+            <img src="photos/vanilla coffee.jfif" alt="Vanilla Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -10px;">
         </div>
-
         <div class="product-info">
             <h2>Vanilla Coffee</h2>
             <p>"Vanilla coffee is like the quiet love that grows slowly but deeply — subtle, soothing, and comforting in all the right ways. It doesn’t scream for attention, but with every sip, you realize it’s exactly what you needed. Sometimes, the simplest things are the ones that make you feel at home. ☕🌿💛"</p>
             <div class="price">₱125</div>
-            <button class="buy-button">Order Now</button>
+            <button class="buy-button" onclick="orderNow('Vanilla Coffee', 125)">Order Now</button>
         </div>
     </div>
 
-
+    <!-- Product 2: Chocolate Coffee -->
     <div class="product-detail">
-
         <div class="product-image">
-            <img src="photos/chocolate coffee.jfif" alt="Chocolate Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
+            <img src="photos/chocolate coffee.jfif" alt="Chocolate Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -10px;">
         </div>
-
         <div class="product-info">
             <h2>Chocolate Coffee</h2>
             <p>"Chocolate coffee is like that person who’s always there to comfort you — bittersweet at first, but once you let it in, it melts all the stress away, leaving you with a warmth you didn’t know you needed. It’s a reminder that sometimes, the best things come when you least expect it. ☕🍫💔"</p>
             <div class="price">₱150</div>
-            <button class="buy-button" onclick="showOrder2">Order Now</button>
+            <button class="buy-button" onclick="orderNow('Chocolate Coffee', 150)">Order Now</button>
         </div>
     </div>
 
-
-        <div class="product-detail">
-
+    <!-- Product 3: Caramel Coffee -->
+    <div class="product-detail">
         <div class="product-image">
-            <img src="photos/caramel coffee.jpg" alt="Caramel Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
+            <img src="photos/caramel coffee.jpg" alt="Caramel Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -10px;">
         </div>
-
         <div class="product-info">
             <h2>Caramel Coffee</h2>
-            <p>Caramel coffee is like that feeling when you’re wrapped in warmth after a long day — sweet, smooth, and just a little bit indulgent. It’s the reminder that even the simplest moments can be filled with sweetness. A little bit of caramel can turn any bitter day into something worth savoring. ☕🍮"</p>
+            <p>"Caramel coffee is like that feeling when you’re wrapped in warmth after a long day — sweet, smooth, and just a little bit indulgent. It’s the reminder that even the simplest moments can be filled with sweetness. A little bit of caramel can turn any bitter day into something worth savoring. ☕🍮"</p>
             <div class="price">₱150</div>
-            <button class="buy-button">Order Now</button>
+            <button class="buy-button" onclick="orderNow('Caramel Coffee', 150)">Order Now</button>
         </div>
     </div>
 
-
-      <div class="product-detail">
-
+    <!-- Product 4: Expresso Coffee -->
+    <div class="product-detail">
         <div class="product-image">
-            <img src="photos/expresso coffee.webp" alt="Expresso Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
+            <img src="photos/expresso coffee.webp" alt="Expresso Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -10px;">
         </div>
-
         <div class="product-info">
             <h2>Expresso Coffee</h2>
             <p>"Espresso is like a love that hits you all at once — intense, bold, and unapologetically strong. No sugar-coating, just pure energy and raw connection. It's the kind of kick you need when you're feeling lost, and the spark that reminds you to keep going. ☕🔥"</p>
             <div class="price">₱99</div>
-            <button class="buy-button">Order Now</button>
+            <button class="buy-button" onclick="orderNow('Expresso Coffee', 99)">Order Now</button>
         </div>
     </div>
 
+    <!-- Product 5: Mocha Coffee -->
     <div class="product-detail">
-
         <div class="product-image">
-            <img src="photos/mocha coffee.jfif" alt="Mocha Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -20px;">
+            <img src="photos/mocha coffee.jfif" alt="Mocha Flavor" style="width: 200px; height: 255px; margin-left: 100px; margin-bottom: 100px; margin-top: -10px;">
         </div>
-
         <div class="product-info">
             <h2>Mocha Coffee</h2>
             <p>"Mocha is like the relationship you crave — a perfect blend of sweetness and strength. It's the balance of passion and comfort, where the rich espresso meets the smooth chocolate, reminding you that life can be both intense and sweet. Sometimes, all you need is a little mocha to make everything feel right. ☕🍫💖"</p>
             <div class="price">₱125</div>
-            <button class="buy-button">Order Now</button>
+            <button class="buy-button" onclick="orderNow('Mocha Coffee', 125)">Order Now</button>
         </div>
     </div>
-    
-    <footer class="footer">
+
+    <footer>
         © Copyright <strong><span>TaraTea</span></strong>. All Rights Reserved
     </footer>
 
     <script>
+        function orderNow(productName, price) {
+            alert("You have ordered " + productName + " for ₱" + price + ".");
+        }
+
         function logout() {
             alert("You have been logged out!");
             window.location.href = "login.html"; 
         }
-        
-        
     </script>
 </body>
 </html>
